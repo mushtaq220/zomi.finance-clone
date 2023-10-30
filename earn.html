@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" sizes="72x72" href="assets/New Logo.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>ROMI | Earn</title>
+</head>
+
+<body class="bg-dark text-light">
+    <!-- Navbar -->
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2 mx-3 px-4 gap-4 mx-auto">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="#">
+                    <img src="assets/logo_small.png" alt="logo" style="width: 200px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 mx-3 px-2 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">NFT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="earn.html">Earn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Referrals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ecosystem</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+
+
+                    <button type="button" class="btn-trade px-4">Trade</button>
+                    <button type="button" class=" btn-custom-nav py-2"><i class="bi bi-wallet2 mx-1"></i>Connect
+                        Wallet</button>
+
+                    <button class="btn-nav-end px-2 position-relative" id="ethereum-btn"><img class="mx-1"
+                            src="assets/ethereum.svg" alt="etherum" width="20" height="20"><svg class="mx-1"
+                            stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" color="white"
+                            height="20" width="20" xmlns="http://www.w3.org/2000/svg" style="color:white;">
+                            <path
+                                d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z">
+                            </path>
+                        </svg></button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Setting dropdown -->
+    <div class="dropdown hover invisible" id="dropdown">
+        <h6 class="my-3 ms-2">Networks</h6>
+        <hr>
+        <ul class="list">
+            <li><img src="assets/ethereum.svg" alt="ethereum" height="17" width="17">Ethereum</li>
+            <li><img src="assets/settings.svg" alt="settings" height="17" width="17"> Settings</li>
+            <li><img src="assets/language.svg" alt="language" height="17" width="17">Language</li>
+        </ul>
+    </div>
+
+    <div class="container pb-5">
+        <div class="stats-layout container">
+            <h4>Earn</h4>
+        </div>
+
+        <!-- titele -->
+        <p class="stats-p container">Stake $ZOMI and $ZLP to earn rewards.</p>
+        <!-- row -->
+        <div class="row  earning gap-4 ">
+            <!-- 1st col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-100">
+                    <div class="card-header end-line">
+                        $Zomi
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>Price</h6>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Wallet</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Staked</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>APR</h6>
+                            <p>...%</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Rewards</h6>
+                            <p>$...</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Multiplier Points APR</h6>
+                            <p>100.00%</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Boost Percentage</h6>
+                            <p>...%</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Total Staked</h6>
+                            <p>0 $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Total Supply</h6>
+                            <p>10,000 $ZOMI ($10)</p>
+                        </div>
+
+                        <button class="btn-custom-green">Buy $ZOMI</button>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+            </div>
+            <!-- 2nd col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-100">
+                    <div class="card-header end-line">
+                        Total Rewards
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>ETH (WETH)</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>$ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Escrowed $ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Staked Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Total</h6>
+                            <p>$...</p>
+                        </div>
+
+                        <a href="" class="btn btn-custom-green col-lg-2">Connect Wallet</a>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+
+            </div>
+            <!--row-end  -->
+        </div>
+        <!-- end -->
+    </div>
+
+
+    <!-- 2nd row -->
+    <div class="container pt-1 pb-5">
+        <div class="row  earning gap-4 ">
+            <!-- 1st col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-100">
+                    <div class="card-header end-line">
+                        $ZLP (Ethereum)
+
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>Price</h6>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Wallet</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Staked</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>APR</h6>
+                            <p>...%</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Rewards</h6>
+                            <p>$...</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between ">
+                            <h6>Total Staked</h6>
+                            <p>0 $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Total Supply</h6>
+                            <p>10,000 $ZOMI ($10)</p>
+                        </div>
+                        <div class="d-grid gap-5 d-md-block">
+                            <button class="btn-custom-green ">Buy $ZLP</button>
+                            <button class="btn-custom-green ">Sell $ZLP</button>
+                        </div>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+            </div>
+            <!-- 2nd col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-100">
+                    <div class="card-header end-line">
+                        Escrowed $ZOMI
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>Price</h6>
+                            <p>$0.00</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Wallet</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Staked</h6>
+                            <p>... $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>APR</h6>
+                            <p>...%</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Multiplier Points APR</h6>
+                            <p>$...</p>
+                        </div>
+
+                        <div class="d-flex justify-content-between ">
+                            <h6>Total Staked</h6>
+                            <p>0 $ZOMI ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Total Supply</h6>
+                            <p>10,000 $ZOMI ($10)</p>
+                        </div>
+                        <a href="" class="btn btn-custom-green col-lg-2">Connect Wallet</a>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+            </div>
+            <!--row-end  -->
+        </div>
+        <!-- end -->
+    </div>
+
+
+    <!-- 3rd row -->
+    <div class="container pt-2 mb-5">
+        <div class="stats-layout container">
+            <h4>Vest
+            </h4>
+        </div>
+
+        <!-- titele -->
+        <p class="stats-p mb-5 container">Convert esZOMI tokens to $ZOMI tokens. <br>
+            Please read the vesting details before using the vaults.</p>
+        <!-- row -->
+        <div class="row  earning gap-4 ">
+            <!-- 1st col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-auto">
+                    <div class="card-header end-line">
+                        $ZOMI Vault
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>ETH (WETH)</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>$ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Escrowed $ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Staked Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Total</h6>
+                            <p>$...</p>
+                        </div>
+
+                        <a href="" class="btn btn-custom-green col-lg-2">Connect Wallet</a>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+            </div>
+            <!-- 2nd col -->
+            <div class="col-md-5 col-12 borders mx-auto">
+
+                <div class="card bg-dark text-light h-100">
+                    <div class="card-header end-line">
+                        Total Rewards
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between ">
+                            <h6>ETH (WETH)</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>$ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between end-line mb-3">
+                            <h6>Escrowed $ZOMI</h6>
+                            <p>
+                                ... ($...)</p>
+                        </div>
+                        <div class="d-flex justify-content-between ">
+                            <h6>Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h6>Staked Multiplier Points</h6>
+                            <p>...</p>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 end-line">
+                            <h6>Total</h6>
+                            <p>$...</p>
+                        </div>
+
+                        <a href="" class="btn btn-custom-green col-lg-2">Connect Wallet</a>
+                    </div>
+                    <!-- card-body-end -->
+                </div>
+                <!-- card-end -->
+
+            </div>
+            <!--row-end  -->
+        </div>
+        <!-- end -->
+    </div>
+    <hr>
+    <div class="Footer">
+        <div class="Footer-wrapper">
+            <div class="Footer-logo mt-3">
+                <img src="assets/logo_small.png" alt="logo" width="380px">
+            </div>
+            <div class="Footer-social-link-block">
+                <a class="App-social-link" href="#" rel="noopener noreferrer"><img src="assets/twiter.svg"
+                        alt="Twitter"></a>
+                <a class="App-social-link" href="#" rel="noopener noreferrer">
+                    <img src="assets/ic_medium.f6051b2e.svg" alt="Medium">
+                </a>
+                <a class="App-social-link" href="" rel="noopener noreferrer">
+                    <img src="assets/github.svg" alt="Github"></a>
+                <a class="App-social-link" href="" rel="noopener noreferrer">
+                    <img src="assets/telegram.svg" alt="Telegram"></a>
+                <a class="App-social-link" href="" rel="noopener noreferrer">
+                    <img src="assets/discord.svg" alt="Discord"></a>
+            </div>
+            <div class="Footer-links">
+                <a class="Footer-link" href="#/terms-and-conditions">Terms and Conditions</a>
+                <a class="Footer-link" href="#/referral-terms">Referral Terms</a>
+                <a href="https://docs.zomi.finance" class="Footer-link" rel="noopener noreferrer">Media
+                    Kit</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="index.js"></script>
+</body>
